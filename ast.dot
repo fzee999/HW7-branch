@@ -1,0 +1,26 @@
+digraph print {
+ 1 [label="main", fontname="monospace"];
+ 2 [label="GET-BOOL", fontname="monospace"];
+ 3 [label="TRUE", fontname="monospace"];
+ 4 [label="TRUE", fontname="monospace"];
+ 5 [label="1", fontname="monospace"];
+ 6 [label="2", fontname="monospace"];
+ 7 [label="IF", fontname="monospace", style=filled, fillcolor=mintcream];
+ 7->4
+ 7->5
+ 7->6
+ 8 [label="2", fontname="monospace"];
+ 9 [label="IF", fontname="monospace", style=filled, fillcolor=mintcream];
+ 9->3
+ 9->7
+ 9->8
+ 10 [label="2", fontname="monospace"];
+ 11 [label="IF", fontname="monospace", style=filled, fillcolor=mintcream];
+ 11->2
+ 11->9
+ 11->10
+ 12 [label="ENTRY", fontname="monospace", style=filled, fillcolor=mintcream];
+ 12->1
+ 12->11
+ }
+ 
